@@ -1,5 +1,6 @@
 package main.java;
 
+import main.java.linkedlist.HasLoop;
 import main.java.linkedlist.LinkedList;
 
 public class Main {
@@ -89,5 +90,20 @@ public class Main {
         System.out.println("Printing LinkedList after reversal: ");
         myList.reverse();
         myList.printList();
+
+        HasLoop myLinkedList = new HasLoop(1);
+        myLinkedList.append(2);
+        myLinkedList.append(3);
+        myLinkedList.append(4);
+        myLinkedList.append(5);
+
+        // create a loop by connecting the tail to the second node
+        myLinkedList.getTail().next = myLinkedList.getHead().next;
+
+
+        System.out.println("Has Loop:");
+        System.out.println( myLinkedList.hasLoop());
+        System.out.println( myLinkedList.hasLoop2());
+
     }
 }
