@@ -23,4 +23,8 @@ public class TrapWater {
         }
         return amount;
     }
+
+//    int[] arr = new int[]{0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1};
+//    int length = arr.length;
+//    System.out.println(trappedWater(arr, length));
 }
