@@ -1,8 +1,8 @@
-package main.java.rainWaterTrapping;
+package main.java.rainwatertrapping;
 
 public class TrapWater {
 
-    //brute force appproach, freecharge R1 interview question
+    //brute force approach, freecharge R1 interview question
     public static int trappedWater(int[] arr, int length) {
         int amount = 0;
 
